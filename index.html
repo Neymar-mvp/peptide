@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>US Peptide Catalog — ChemExpress</title>
+<title>US Peptide Catalog — PeptideExpress</title>
 <style>
   :root{
     --bg:#0b1020; --panel:#121a30; --panel2:#16203b; --line:#243150;
@@ -161,7 +161,7 @@
 <script>
 const I18N = {
   en:{
-    brand:"ChemExpress", title:"US Peptide Catalog",
+    brand:"PeptideExpress", title:"US Peptide Catalog",
     slogan:"99%+ PURITY · COA INCLUDED · SECURE PACKAGING · FAST WORLDWIDE SHIPPING",
     search_ph:"Search peptide, code, or category…",
     all:"All Products", add:"Add to cart", added:"Added ✓", details:"Details",
@@ -174,7 +174,7 @@ const I18N = {
     count:(n,t)=>n+" / "+t+" products"
   },
   zh:{
-    brand:"ChemExpress", title:"美国肽类目录",
+    brand:"PeptideExpress", title:"美国肽类目录",
     slogan:"纯度 99%+ · 含 COA · 安全包装 · 全球快速发货",
     search_ph:"搜索肽类、货号或分类…",
     all:"全部产品", add:"加入购物车", added:"已加入 ✓", details:"详情",
@@ -187,7 +187,7 @@ const I18N = {
     count:(n,t)=>"共 "+n+" / "+t+" 件"
   },
   es:{
-    brand:"ChemExpress", title:"Catálogo de Péptidos (EE. UU.)",
+    brand:"PeptideExpress", title:"Catálogo de Péptidos (EE. UU.)",
     slogan:"Pureza 99%+ · COA Incluido · Embalaje Seguro · Envío Mundial Rápido",
     search_ph:"Buscar péptido, código o categoría…",
     all:"Todos los productos", add:"Añadir al carrito", added:"Añadido ✓", details:"Detalles",
@@ -200,7 +200,7 @@ const I18N = {
     count:(n,t)=>n+" / "+t+" productos"
   },
   ru:{
-    brand:"ChemExpress", title:"Каталог пептидов (США)",
+    brand:"PeptideExpress", title:"Каталог пептидов (США)",
     slogan:"Чистота 99%+ · Сертификат COA · Надёжная упаковка · Быстрая доставка",
     search_ph:"Поиск пептида, артикула или категории…",
     all:"Все товары", add:"В корзину", added:"Добавлено ✓", details:"Подробнее",
@@ -213,7 +213,7 @@ const I18N = {
     count:(n,t)=>n+" / "+t+" товаров"
   },
   ja:{
-    brand:"ChemExpress", title:"ペプチドカタログ（米国）",
+    brand:"PeptideExpress", title:"ペプチドカタログ（米国）",
     slogan:"純度99%+ · COA付 · 安全梱包 · 世界迅速配送",
     search_ph:"ペプチド・品番・カテゴリで検索…",
     all:"すべての商品", add:"カートに入れる", added:"追加済み ✓", details:"詳細",
@@ -226,7 +226,7 @@ const I18N = {
     count:(n,t)=>n+" / "+t+" 商品"
   },
   ko:{
-    brand:"ChemExpress", title:"펩타이드 카탈로그 (미국)",
+    brand:"PeptideExpress", title:"펩타이드 카탈로그 (미국)",
     slogan:"순도 99%+ · COA 포함 · 안전 포장 · 빠른 전세계 배송",
     search_ph:"펩타이드, 품번 또는 카테고리 검색…",
     all:"전체 상품", add:"장바구니에 담기", added:"추가됨 ✓", details:"자세히",
@@ -239,7 +239,7 @@ const I18N = {
     count:(n,t)=>n+" / "+t+" 개"
   },
   ar:{
-    brand:"ChemExpress", title:"كتالوج الببتيدات (الولايات المتحدة)",
+    brand:"PeptideExpress", title:"كتالوج الببتيدات (الولايات المتحدة)",
     slogan:"نقاء 99%+ · شهادة COA · تغليف آمن · شحن عالمي سريع",
     search_ph:"ابحث عن ببتيد أو رمز أو فئة…",
     all:"كل المنتجات", add:"أضف إلى السلة", added:"تمت الإضافة ✓", details:"التفاصيل",
@@ -499,7 +499,7 @@ $("checkout").onclick=()=>{
   const L={en:["ORDER","Total"],zh:["订单信息","合计"],es:["PEDIDO","Total"],ru:["ЗАКАЗ","Итого"],ja:["ご注文","合計"],ko:["주문","합계"],ar:["الطلب","الإجمالي"]};
   const lbl=L[lang]||L.en;
   let total=0, lines=[];
-  lines.push("ChemExpress — "+lbl[0]);
+  lines.push("PeptideExpress — "+lbl[0]);
   lines.push("--------------------------------");
   ids.forEach(id=>{ const p=byId[id],q=cart[id],line=p[4]*q; total+=line;
     lines.push(p[1]+" | "+p[3]+" | $"+p[4]+" x"+q+" = $"+line); });
